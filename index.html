@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Store</h1>
+        <div class="container">
+            <header class="header">
+                <h1>🛒 Product Store</h1>
+                <div class="cart-info">
+                    <span id="cartCount">0</span> items in cart
+                </div>
+            </header>
+            <div class="filters">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                </select>
+                <select id="priceFilter">
+                    <option value="all">All Prices</option>
+                    <option value="low">Below ₹1,000</option>
+                    <option value="mid">₹1,000 - ₹10,000</option>
+                    <option value="high">Above ₹10,000</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="rating-desc">Sort by Rating (High to Low)</option>
+                    <option value="rating-asc">Sort by Rating (Low to High)</option>
+                    <option value="price-asc">Sort by Price (Low to High)</option>
+                    <option value="price-desc">Sort by Price (High to Low)</option>
+                </select>
+            </div>
+            <div id="productList" class="product-list"></div>
+        </div>
+            <!-- Product images are now shown in the product cards above. -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
